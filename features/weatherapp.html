@@ -23,26 +23,40 @@
             </div>
             <div class="main-wrapper">
 
-                <div class="search-bar">
+                <div class="search-bar flex align-center">
                     <input type="text" placeholder="Search city.." id="cityName" />
                     <i class="fa-solid fa-location-dot searchIcon"></i>
                 </div>
             </div>
 
             <div class="display--weather-wrapper">
-                <div class="time-container">
+                <div class="time-container flex align-center justify--center">
+                    <img src="/assets/images/main--image.png" class="main-image" />
+                    <h2 class="temp-wrapper">
+                        <div class="text-css flex justify--center align-center " id="weather-text">
+                            <div class="time" id="display-date"></div>
+                            <p id="display-temp" class="temp flex align-center justify--center">
+                                <span class="temp-weather" id="temp--weather">29 °C</span>
+                                <span class="main-weather" id="weather-sky">sunny</span>
+                            </p>
+                        </div>
+                    </h2>
 
-                    <h2>Temperature<p id="display-temp"></p>
-                    </h2>
-                    <h2>humidity<p id="display-humidity"></p>
-                    </h2>
-                    <h2>wind speed<p id="wind-speed"></p>
-                    </h2>
-                    <h2>weather desc<p id="weather-desc"></p>
-                    </h2>
-                    <h2>weather main<p id="weather-main"></p>
-                    </h2>
+                    <div class="display-all-wrapper flex flex-column align-center">
 
+                        <h2 class="sub-wrapper"><img src="/assets/images/icn-1.png" />humidity<p id="display-humidity">
+                                34 %</p>
+                        </h2>
+                        <h2 class="sub-wrapper"><img src="/assets/images/icon-2.png" />wind speed<p id="wind-speed">15
+                                km/h</p>
+                        </h2>
+                        <h2 class="sub-wrapper"><img src="/assets/images/icon-3.png" />weather desc<p id="weather-desc">
+                                clear sky</p>
+                        </h2>
+                        <h2 class="sub-wrapper"><img src="/assets/images/icon-4.png" />weather main<p id="weather-main">
+                                smoke</p>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
