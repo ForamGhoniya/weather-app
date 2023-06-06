@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>weather</title>
+</head>
+
+<body>
+    <section class="weather-container">
+        <div class="background-image-wrapper">
+            <div class="title-name">
+                <i class="fa-thin fa-cloud-bolt-sun"></i>
+                <h2>Weather App</h2>
+            </div>
+            <div class="main-wrapper">
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search city.." id="cityName" />
+                    <i class="fa-solid fa-location-dot searchIcon"></i>
+                </div>
+            </div>
+
+            <div class="display--weather-wrapper">
+                <div class="time-container">
+
+                    <h2>Temperature<p id="display-temp"></p>
+                    </h2>
+                    <h2>humidity<p id="display-humidity"></p>
+                    </h2>
+                    <h2>wind speed<p id="wind-speed"></p>
+                    </h2>
+                    <h2>weather desc<p id="weather-desc"></p>
+                    </h2>
+                    <h2>weather main<p id="weather-main"></p>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./weatherapp.js"></script>
+</body>
+
+</html>

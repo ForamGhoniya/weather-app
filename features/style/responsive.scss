@@ -1,0 +1,36 @@
+$max-width: calc(100% - 20px);
+
+@media screen and (max-width: 1440px) {
+    .weather-container {
+        .background-image-wrapper {
+            .display--weather {
+                height: 430px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .weather-container {
+        .background-image-wrapper {
+            .display--weather {
+                max-width: $max-width;
+                .time-container {
+                    max-width: $max-width;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .weather-container {
+        .background-image-wrapper {
+            .main-wrapper {
+                .search-bar {
+                    max-width: $max-width;
+                }
+            }
+        }
+    }
+}

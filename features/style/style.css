@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.weather-container {
+  height: 100vh;
+  width: 100%;
+}
+.weather-container .background-image-wrapper {
+  height: 100%;
+  background-image: url("../../assets/images/bg-img.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.weather-container .background-image-wrapper .title-name h2 {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+.weather-container .background-image-wrapper .main-wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.weather-container .background-image-wrapper .main-wrapper .search-bar {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+}
+.weather-container .background-image-wrapper .main-wrapper .search-bar input {
+  padding: 12px;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+.weather-container .background-image-wrapper .main-wrapper .search-bar .searchIcon {
+  color: #ffffff;
+}
+.weather-container .background-image-wrapper .display--weather-wrapper {
+  width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4509803922);
+  border-radius: 10px;
+}
+.weather-container .background-image-wrapper .display--weather-wrapper .time-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.weather-container .background-image-wrapper .display--weather-wrapper .time-container h2 {
+  width: 100px;
+  color: #ffffff;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

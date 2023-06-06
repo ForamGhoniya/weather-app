@@ -1,0 +1,18 @@
+@media screen and (max-width: 1440px) {
+  .weather-container .background-image-wrapper .display--weather {
+    height: 430px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .weather-container .background-image-wrapper .display--weather {
+    max-width: calc(100% - 20px);
+  }
+  .weather-container .background-image-wrapper .display--weather .time-container {
+    max-width: calc(100% - 20px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .weather-container .background-image-wrapper .main-wrapper .search-bar {
+    max-width: calc(100% - 20px);
+  }
+}/*# sourceMappingURL=responsive.css.map */
