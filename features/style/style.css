@@ -65,6 +65,7 @@
 }
 .weather-container .background-image-wrapper .main-wrapper .search-bar .searchIcon {
   color: #ffffff;
+  cursor: pointer;
 }
 .weather-container .background-image-wrapper .display--weather-wrapper {
   width: 1000px;
@@ -100,7 +101,7 @@
   font-size: 40px;
 }
 .weather-container .background-image-wrapper .display--weather-wrapper .display-container .temp-wrapper .text-css .city .country {
-  font-size: 20px;
+  font-size: 30px;
 }
 .weather-container .background-image-wrapper .display--weather-wrapper .display-container .temp-wrapper .text-css .temp {
   text-align: center;

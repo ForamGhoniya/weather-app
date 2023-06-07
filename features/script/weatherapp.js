@@ -22,15 +22,17 @@ function fetchData() {
         .then((response) => response.json())
 
         .then((response) => {
+            console.log(response)
 
             document.getElementById("city").innerHTML = `${response.name}`;
             document.getElementById("country").innerHTML = `${response.sys.country}`;
+
             document.getElementById("temp--weather").innerHTML = `${parseInt(response.main.temp.toString())}°C`;
             document.getElementById("weather-desc").innerHTML = `${response.weather[0].description}`;
             document.getElementById("display-humidity").innerHTML = `${response.main.humidity}%`;
             document.getElementById("wind-speed").innerHTML = `${response.wind.speed}km/h`;
             document.getElementById("display-pressure").innerHTML = `${response.main.pressure}mb`;
-            document.getElementById("coord").innerHTML = `${response.coord.lon}`;
+            document.getElementById("lon-lat").innerHTML = `${response.coord.lon}-${response.coord.lat}`;
         }
         );
 }
