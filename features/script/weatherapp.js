@@ -23,11 +23,14 @@ function fetchData() {
 
         .then((response) => {
 
-            document.getElementById("display-temp").innerHTML = `${parseInt(response.main.temp.toString())}°C`;
+            document.getElementById("city").innerHTML = `${response.name}`;
+            document.getElementById("country").innerHTML = `${response.sys.country}`;
+            document.getElementById("temp--weather").innerHTML = `${parseInt(response.main.temp.toString())}°C`;
+            document.getElementById("weather-desc").innerHTML = `${response.weather[0].description}`;
             document.getElementById("display-humidity").innerHTML = `${response.main.humidity}%`;
             document.getElementById("wind-speed").innerHTML = `${response.wind.speed}km/h`;
-            document.getElementById("weather-desc").innerHTML = `${response.weather[0].description}`;
-            document.getElementById("weather-main").innerHTML = `${response.weather[0].main}`;
+            document.getElementById("display-pressure").innerHTML = `${response.main.pressure}mb`;
+            document.getElementById("coord").innerHTML = `${response.coord.lon}`;
         }
         );
 }

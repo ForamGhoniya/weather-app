@@ -30,17 +30,22 @@
             </div>
 
             <div class="display--weather-wrapper">
-                <div class="time-container flex align-center justify--center">
+                <div class="time" id="display-date"></div>
+                <div class="display-container flex align-center justify--center">
+
+
                     <img src="/assets/images/main--image.png" class="main-image" />
-                    <h2 class="temp-wrapper">
+                    <div class="temp-wrapper">
                         <div class="text-css flex justify--center align-center " id="weather-text">
-                            <div class="time" id="display-date"></div>
+                            <p class="city" id="city"> Rajkot
+                                <span class="country" id="country">IN</span>
+                            </p>
                             <p id="display-temp" class="temp flex align-center justify--center">
                                 <span class="temp-weather" id="temp--weather">29 °C</span>
-                                <span class="main-weather" id="weather-sky">sunny</span>
-                            </p>
+                            <p class="main-weather" id="weather-desc">clear sky</p>
+
                         </div>
-                    </h2>
+                    </div>
 
                     <div class="display-all-wrapper flex flex-column align-center">
 
@@ -50,10 +55,11 @@
                         <h2 class="sub-wrapper"><img src="/assets/images/icon-2.png" />wind speed<p id="wind-speed">15
                                 km/h</p>
                         </h2>
-                        <h2 class="sub-wrapper"><img src="/assets/images/icon-3.png" />weather desc<p id="weather-desc">
-                                clear sky</p>
+                        <h2 class="sub-wrapper"><img src="/assets/images/icon-3.png" />pressure<p id="display-pressure">
+                                105
+                                mb</p>
                         </h2>
-                        <h2 class="sub-wrapper"><img src="/assets/images/icon-4.png" />weather main<p id="weather-main">
+                        <h2 class="sub-wrapper"><img src="/assets/images/icon-4.png" />lon-lat<p id="coord">
                                 smoke</p>
                         </h2>
                     </div>

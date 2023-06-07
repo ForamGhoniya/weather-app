@@ -44,7 +44,7 @@
             padding-bottom: 20px;
 
             .search-bar {
-                width: 350px;
+                width: 300px;
                 justify-content: space-around;
                 margin: 0 auto;
                 border-radius: 25px;
@@ -76,42 +76,48 @@
             background-color: #ffffff73;
             border-radius: 10px;
 
-            .time-container {
+            .time {
+                font-size: 23px;
+                color: #ffffff;
+                text-align: right;
+                padding: 20px 20px 0 0;
+            }
+
+            .display-container {
                 flex-wrap: wrap;
                 max-width: 800px;
                 height: 100%;
                 margin: 0 auto;
-                padding: 20px 0;
 
-                h2 {
-                    color: #ffffff;
-                    font-size: 30px;
-                }
-
-                .temp-wrapper {
-                    .text-css {
-                        flex-direction: column;
-
-                        .time {
-                            font-size: 23px;
-                        }
-                        .temp {
-                            text-align: center;
-                            flex-direction: column;
-
-                            .temp-weather {
-                                font-size: 80px;
-                            }
-                            .main-weather {
-                                font-size: 45px;
-                            }
-                        }
-                    }
-                }
                 .main-image {
                     width: 160px;
                     height: 160px;
                     margin-right: 20px;
+                }
+
+                .temp-wrapper {
+                    color: #ffffff;
+                    .text-css {
+                        flex-direction: column;
+
+                        .city {
+                            font-size: 40px;
+
+                            .country {
+                                font-size: 20px;
+                            }
+                        }
+                        .temp {
+                            text-align: center;
+                            flex-direction: column;
+                            .temp-weather {
+                                font-size: 80px;
+                            }
+                        }
+                        .main-weather {
+                            font-size: 45px;
+                        }
+                    }
                 }
 
                 .display-all-wrapper {
@@ -123,9 +129,10 @@
                         height: 200px;
                         font-size: 20px;
                         text-align: center;
+                        color: #ffffff;
                         background-color: #0000005c;
                         border-radius: 10%;
-                        margin: 10px;
+                        margin: 10px 10px 40px;
 
                         img {
                             width: 130px;
@@ -133,7 +140,7 @@
                             padding: 10px;
                         }
 
-                        p {
+                        & p {
                             font-size: 18px;
                             font-weight: 400;
                             padding: 5px 0;
@@ -145,25 +152,24 @@
     }
 }
 
-#weather-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
+// #display-date {
+//     font-size: 23px;
+//     color: #ffffff;
+// }
+// #weather-text {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
 
-    #display-date {
-        font-size: 23px;
-    }
-
-    #display-temp {
-        display: flex;
-        flex-direction: column;
-        #temp--weather {
-            font-size: 80px;
-        }
-        #main--weather {
-            font-size: 45px;
-        }
-    }
-}
+//     #display-temp {
+//         display: flex;
+//         flex-direction: column;
+//         #temp--weather {
+//             font-size: 80px;
+//         }
+//     }
+//     #weather-desc {
+//         font-size: 40px;
+//     }
+// }
