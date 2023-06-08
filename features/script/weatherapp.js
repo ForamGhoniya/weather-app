@@ -3,7 +3,7 @@ function updateTime() {
     let dates = date.getDate();
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let name = month[date.getMonth()];
-    const days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const day = days[date.getDay()];
 
 
@@ -28,14 +28,27 @@ function fetchData() {
             document.getElementById("country").innerHTML = `${response.sys.country}`;
 
             document.getElementById("temp--weather").innerHTML = `${parseInt(response.main.temp.toString())}°C`;
+
             document.getElementById("weather-desc").innerHTML = `${response.weather[0].description}`;
             document.getElementById("display-humidity").innerHTML = `${response.main.humidity}%`;
+
             document.getElementById("wind-speed").innerHTML = `${response.wind.speed}km/h`;
+
             document.getElementById("display-pressure").innerHTML = `${response.main.pressure}mb`;
-            document.getElementById("lon-lat").innerHTML = `${response.coord.lon}-${response.coord.lat}`;
+
+            document.getElementById("lat").innerHTML = `${response.coord.lat}`;
+
+            document.getElementById("lon").innerHTML = `${response.coord.lon}`;
         }
         );
 }
+var input = document.getElementById("cityName");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+    }
+});
 search.addEventListener("click", () => {
     fetchData()
 });
