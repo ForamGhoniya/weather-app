@@ -24,7 +24,6 @@
 
     <video autoplay muted loop id="myVideo">
         <source src="./assets/video/pexels-shan-ali-9068612-1920x1080-30fps.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
     </video>
     <section class="weather-container">
         <div class="background-image-wrapper">
@@ -46,7 +45,7 @@
 
                     <div class="temp-wrapper flex align-center">
                         <div class="display-all-wrapper flex flex-column align-center justify--center">
-                            <img src="/assets/images/sunn.gif" class="main-image" />
+                            <img src="/assets/images/sunn.gif" class="main-image" id="weather-image" />
                             <div class="text-css flex justify--center align-center " id="weather-text">
                                 <div class="location flex">
                                     <p class="city flex" id="city">Ahmedabad
@@ -55,7 +54,7 @@
                                 </div>
                                 <p id="display-temp" class="temp flex align-center justify--center">
                                     <span class="temp-weather" id="temp--weather">38°C</span>
-                                <p class="main-weather" id="weather-desc">clear sky</p>
+                                <p class="main-weather" id="weather-desc">clear</p>
 
                             </div>
                         </div>
@@ -65,8 +64,6 @@
                             <div class="sub-forecast-wrapper flex justify--center align-center">
 
                                 <div class="forecast-list">
-                                    <!-- <img src="/assets/images/humidity.png" /> -->
-                                    <!-- <i class="fa-solid fa-droplet"></i> -->
                                     <h2 class="sub-wrapper">humidity</h2>
                                     <p id="display-humidity">32%
                                     </p>
@@ -74,14 +71,12 @@
                                 </div>
 
                                 <div class="forecast-list">
-                                    <!-- <img src="/assets/images/11.gif" /> -->
                                     <h2 class="sub-wrapper">wind speed</h2>
                                     <p id="wind-speed">4.63 km/h</p>
 
                                 </div>
 
                                 <div class="forecast-list">
-                                    <!-- <img src="/assets/images/33.gif" /> -->
                                     <h2 class="sub-wrapper">pressure</h2>
                                     <p id="display-pressure">1003mb
                                     </p>
@@ -89,7 +84,6 @@
                                 </div>
 
                                 <div class="forecast-list">
-                                    <!-- <img src="/assets/images/55.gif" /> -->
                                     <h2 class="sub-wrapper">lat</h2>
                                     <p id="lat">23.0333
                                     </p>
@@ -97,7 +91,6 @@
                                 </div>
 
                                 <div class="forecast-list">
-                                    <!-- <img src="/assets/images/22.gif" /> -->
                                     <h2 class="sub-wrapper">lon</h2>
                                     <p id="lon">72.6167
                                     </p>
