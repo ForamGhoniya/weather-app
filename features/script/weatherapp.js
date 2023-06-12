@@ -22,7 +22,6 @@ function fetchData() {
         .then((response) => response.json())
 
         .then((response) => {
-            console.log(response)
 
             document.getElementById("city").innerHTML = `${response.name}`;
 
