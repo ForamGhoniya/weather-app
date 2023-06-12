@@ -42,6 +42,7 @@ function fetchData() {
 
             document.getElementById("lon").innerHTML = `${response.coord.lon}`;
             changeImage(response.weather[0].description);
+            changeBackground(response.weather[0].description);
         }
         );
 }
@@ -71,6 +72,30 @@ function changeImage(weatherDescription) {
         imgElement.src = '../assets/image/sunn.gif';
     }
 }
+
+
+function changeBackground(weatherDescription) {
+    const weatherBgImages = {
+        'scattered clouds': '/assets/images/scattered-clouds-bg.gif',
+        'few clouds': '/assets/images/fewclouds-bg.gif',
+        'broken clouds': '/assets/images/broken-clouds-bg.gif',
+        'overcast clouds': '/assets/images/overcast-clouds-bg.gif',
+        'smoke': '/assets/images/smoke-bg.gif',
+        'clear sky': '/assets/images/clear-sky-bg.gif',
+        'LightRain': '/assets/images/LightRain-bg.gif',
+        'haze': '/assets/images/haze-bg.gif'
+    };
+
+    const imgElement = document.getElementById('background-image--wrapper');
+
+    if (weatherDescription in weatherBgImages) {
+        const imageUrl = weatherBgImages[weatherDescription];
+        imgElement.style.backgroundImage = `url('${imageUrl}')`;
+    } else {
+        imgElement.style.backgroundImage = 'url("/assets/images/overcast-clouds-bg.gif")';
+    }
+}
+
 
 var input = document.getElementById("cityName");
 input.addEventListener("keypress", function (event) {
