@@ -18,7 +18,7 @@ function fetchData() {
     let city = document.getElementById("cityName").value;
 
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b6a20c093d78b4573edf3f989d9c56f5&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`)
         .then((response) => response.json())
 
         .then((response) => {
